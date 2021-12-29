@@ -3,6 +3,27 @@
 //  ResturantMenues
 //
 //  Created by REOF ALMESHARI on 24/05/1443 AH.
+
+/* ..Preview Menu://
+   1.1 Dishes
+    1.1dishes with main ingredeiants  included and price" "maybe we use array"  insede loop  "
+   2. Order total
+     2.1 Preview order and the final total
+   3. Rate
+     3.1 rate the restaurant 
+   4. filtering 
+   5. Exit
+   
+What we need :
+ - [ ]  Variables and Constants
+ - [ ]  At least one Conditional Statement
+ - [ ]  At least one loop
+ - [where should do it in :) ]  At least one type of Collections
+ - [ ]  readLine() and print()
+ - [ ]  Optional type
+ - [ ]  Function(s)
+ - [ ]  At least one Model (class, struct or enum)
+*/
 //
 
 import Foundation
@@ -87,9 +108,6 @@ class ResturantFunc : ResturantMenu{
 
             if UserChoice == "yes" || UserChoice == "Yes" || UserChoice == "1"{
                 Drinks()
-//               Total+=Price
-//                order+=1
-//                userOrder.append(DishName)
 
 
             }}}
@@ -119,12 +137,7 @@ class ResturantFunc : ResturantMenu{
      the App should add the price and when user done and want to check out the
      app show the Total followed by Dishes name
      */
-    //
-    //    if UserChoice == "yes" || UserChoice == "Yes" || UserChoice == "1"{
-    //
-    //        quantity+=num
-    //        order+=1}
-    //        else{Menu()}
+   
       
     }
 
@@ -211,48 +224,12 @@ class ResturantFunc : ResturantMenu{
         print(" 02. Harees\n")
         print( "03. Gursan\n")
         print(" 04. Saleeg\n")
-    //    for  i in AllDishes{
-    //        if i == "  04. Hiniy" {
-    //            continue }
-    //        else {
-    //                print(i)
-    //            }
-    //    }
+   
         print(line)
         print("Your Choice is 📝: ")
         print(line)
-    //    if let UserInput=readLine(){
-    //        UserChoice=UserInput
-    //        switch UserChoice{
-    //        case "1" :
-    //            print("Kabsa is a rice dish that is enjoyed throughout the Gulf States of the Arabian Peninsula. 10SR ")
-    //            // print(dish)
-    //            print("-------------------------")
-    //            print(OrderMsg)
-    //            print("-------------------------")
-    //            PlaceOrder(10 , DishName: "Kabsa")
-    //        case "2" :
-    //            print("Harees is usually prepared with coarse ground wheat which is mixed with water, butter, and meat, then left to soak overnight.  15SR")
-    //            print("-------------------------")
-    //            print(OrderMsg)
-    //            print("-------------------------")
-    //            PlaceOrder(15 , DishName: "Harees")
-    //
-    //        case "3" :
-    //            print("Gursan is one of Saudi Arabian national dishes made by placing dry, paper-thin sheets of bread atop meat and vegetables in a broth until the bread pieces soak up all of the flavorful juices. 20SR")
-    //            print("-------------------------")
-    //            print(OrderMsg)
-    //            print("-------------------------")
-    //            PlaceOrder(20 , DishName: "Gursan")
-    //
-    //            case "4":
-    //                print("Hailing from Hejaz, saleeg is a traditional Saudi Arabian rice dish consisting of creamy, porridge-like short-grain rice and roasted meat. Chicken is the most common meat choice, and it is typically boiled in water with spices before it is roasted. 10SR")
-    //                print("-------------------------")
-    //                print(OrderMsg)
-    //                print("-------------------------")
-    //                PlaceOrder(10 , DishName: "Saleeg")
-    //        default: print("try Again!")
-    //        }
+        PlaceOrder(20 , DishName: "Gursan")
+ 
         
     }
 
@@ -280,7 +257,7 @@ class ResturantFunc : ResturantMenu{
                 PlaceOrder(1 , DishName:"Water" )
             default: print(" Please Try Again 🛑 ")
             }}
-     //   print(" Want Something to Drink ? ")
+
         
     }
 
@@ -299,18 +276,7 @@ class ResturantFunc : ResturantMenu{
             print("")
             print(line)
             PlaceOrder(10 , DishName: "Kabsa")
-    //        if let UserInput=readLine(){
-    //            UserChoice=UserInput
-    //
-    //        if UserChoice == "yes" || UserChoice == "Yes" {
-    //           Total+=10
-    //            order+=1
-    //            print("Added Successfuly !")
-    //        }
-    ////            else{
-    ////                print("-------------------------")
-    ////                Menu()}}
-                
+ 
             
            
         case "2" :
@@ -335,17 +301,7 @@ class ResturantFunc : ResturantMenu{
             print("")
             print(line)
             PlaceOrder(20 , DishName: "Gursan")
-    //        if let UserInput=readLine(){
-    //            UserChoice=UserInput
-    //
-    //        if UserChoice == "yes" || UserChoice == "Yes" || UserChoice == "1"{
-    //
-    //            order+=1
-    //            print("Added Successfuly !")
-    //        }
-    //            //else{Menu()}
-    //
-    //        }
+
             
         case "4" :
             print("\n  Hininy is a traditional Saudi Arabian dish consisting of dates, butter, and brown bread. The whole concoction is then additionally flavored with spices such as saffron and cardamom. The dish is a specialty of Najd, where it is usually prepared during winter. 20SR\n")
@@ -355,17 +311,7 @@ class ResturantFunc : ResturantMenu{
             print("")
             print(line)
             PlaceOrder(20 , DishName:"Hininy" )
-    //        if let UserInput=readLine(){
-    //            UserChoice=UserInput
-    //
-    //        if UserChoice == "yes" || UserChoice == "Yes" || UserChoice == "1"{
-    //           Total+=20
-    //            order+=1
-    //            print("Added Successfuly !")
-    //        }
-    //            //else{Menu()}
-    //
-    //        }
+
            
         case "5":
             print("\n  Hailing from Hejaz, saleeg is a traditional Saudi Arabian rice dish consisting of creamy, porridge-like short-grain rice and roasted meat. Chicken is the most common meat choice, and it is typically boiled in water with spices before it is roasted. 10SR\n")
@@ -375,17 +321,7 @@ class ResturantFunc : ResturantMenu{
             print("")
             print(line)
             PlaceOrder(10 , DishName: "Saleeg")
-    //        if let UserInput=readLine(){
-    //            UserChoice=UserInput
-    //
-    //        if UserChoice == "yes" || UserChoice == "Yes" || UserChoice == "1"{
-    //           Total+=10
-    //            order+=1
-    //            print("Added Successfuly !")
-    //        }
-    //           // else{Menu()}
-    //
-    //        }
+
             
         case "0":
            
@@ -396,7 +332,7 @@ class ResturantFunc : ResturantMenu{
 
         }
     }
-}
+}//End of Class
 
 var My=ResturantFunc() //Declare instance
 
@@ -424,4 +360,4 @@ default:
     print("Try Again ")
 
     }}}while My.UserChoice != "5"
-//UserChoice
+
